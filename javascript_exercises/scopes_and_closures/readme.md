@@ -15,6 +15,11 @@
 1. Как создавать переменные, отличие var, let, const
 2. Способы создания функций
 
+### Задачи
+
+1. [Counter - счетчик](https://github.com/trof808/frontend-knowledge-database/tree/main/javascript_exercises/scopes_and_closures/counter)
+2. [Memoize - функция сохраняющая результаты вызовов](https://github.com/trof808/frontend-knowledge-database/tree/main/javascript_exercises/scopes_and_closures/memoize)
+
 ### Ссылки для изучения
 
 1. https://learn.javascript.ru/closure
