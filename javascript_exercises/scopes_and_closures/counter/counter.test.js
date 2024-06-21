@@ -16,9 +16,9 @@ test('check decrement', () => {
 })
 
 test('check encapsulation', () => {
-    const counter1 = counter("First counter");
-    const counter2 = counter("Second counter");
-    const counter3 = counter("Third counter");
+    const counter1 = counter();
+    const counter2 = counter();
+    const counter3 = counter();
 
     expect(counter1.getValue()).toBe(0);
     expect(counter2.getValue()).toBe(0);
