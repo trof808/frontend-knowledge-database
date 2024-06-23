@@ -7,7 +7,7 @@ Promises наконец-то дали нам возможность не жда�
 
 ### Задачи
 
-1. [Релизовать promise.all](https://github.com/trof808/frontend-knowledge-database/tree/main/javascript_exercises/promises/promise_all)
+1. [Реализовать promise.all](https://github.com/trof808/frontend-knowledge-database/tree/main/javascript_exercises/promises/promise_all)
 
 ### Ссылки для изучения
 
