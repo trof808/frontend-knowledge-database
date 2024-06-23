@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest'
-import { counter } from './counter.answer'
+import { counter } from './counter'
 
 test('check increment', () => {
     const counterInstance = counter();

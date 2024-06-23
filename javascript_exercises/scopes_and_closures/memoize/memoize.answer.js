@@ -6,12 +6,18 @@
  * @param {*} func - декорируемая функция
  */
 function memoize(func) {
+    // Объект хранит в себе результаты вызовов
     const cache = {};
 
     return function(...args) {
+        // В качестве ключа будет строка состоящая из аргументов
         const key = JSON.stringify(args);
+        // Если вызов с такими аргументами уже был сохранен, то вернуть его
         if (cache[key]) return cache[key];
+
+        // В ином случае вызвать декорируемую функцию и получить результат
         const result = func(...args);
+        // Сохранить результат с объекте
         cache[key] = result;
         return result;
     }

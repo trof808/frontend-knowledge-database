@@ -1,7 +1,7 @@
 import { test, expect } from 'vitest';
-import { memoize } from './memoize.example';
+import { memoize } from './memoize';
 
-test('shoud return same output with same arguments', () => {
+test('should return same output with same arguments', () => {
     const sum = (a, b) => a + b;
     const memoizedSum = memoize(sum);
 
@@ -11,7 +11,7 @@ test('shoud return same output with same arguments', () => {
     expect(result1).toBe(result2);
 })
 
-test('shoud return different output with different arguments', () => {
+test('should return different output with different arguments', () => {
     const sum = (a, b) => a + b;
     const memoizedSum = memoize(sum);
 
