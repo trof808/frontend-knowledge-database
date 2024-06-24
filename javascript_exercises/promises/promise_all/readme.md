@@ -7,6 +7,21 @@
 3. В массиве должны содержаться только промисы
 4. В случае падения одного из промисов, метод отдает reject
 
+```javascript
+var p1 = Promise.resolve(3);
+var p2 = Promise.resolve(2);
+var p3 = new Promise((resolve, reject) => {
+  setTimeout(resolve, 100, "foo");
+});
+
+Promise.all([p1, p2, p3]).then((values) => {
+  console.log(values);
+});
+
+//Выведет:
+// [3, 2, "foo"]
+```
+
 ## Внимание!!!
 
 В файле с название *.answer.js находится готовое решение
@@ -19,3 +34,7 @@
 
 Чтобы запустить тест нужно вызвать в терминале
 `npx vitest promise_all.test.js`
+
+## Ссылки для изучения
+
+1. https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Promise/all
