@@ -23,4 +23,12 @@ function memoize(func) {
     }
 }
 
+// Проверочный код
+const sum = (a,b) => a + b;
+
+const memoizedSum = memoize(sum);
+
+console.log(memoizedSum(1, 2)) // Результат считается с помощью sum и сохраняется внутри memoize
+console.log(memoizedSum(1, 2)) // Повторный вызов с теми же аргументами берет результат из контекста функции memoize 
+
 export { memoize }; 
